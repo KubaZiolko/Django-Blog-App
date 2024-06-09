@@ -1,0 +1,9 @@
+{% block content %}
+{% if query %}
+    {% if posts %}
+        {% include 'blog/user_posts.html' %}
+    {% else %}
+        <h1>Please enter a search query</h1>
+    {% endif %}
+{% endif %}
+{% endblock content %}
